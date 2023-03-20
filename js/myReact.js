@@ -40,13 +40,11 @@ class Card extends React.Component {
   }
   componentDidMount() {
     let cardContent = document.getElementById(this.props.id);
-    alert(cardContent);
     cardContent.innerHTML = this.props.text;
   }
 }
 
 window.addEventListener("load", () => {
-  alert("haha");
   let root = ReactDOM.createRoot(document.body);
   root.render(
     <div>
