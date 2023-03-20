@@ -1,0 +1,19 @@
+@import url("reset.css");
+
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower");
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC");
+
+body {
+  font-family: "noto Sans TC", "Indie Flower", cursive !important;
+  background: #fde3a7; /*CAPE HONEY*/
+  margin: 0px;
+  padding: 0px;
+}
+
+::selection {
+  background: transparent;
+}
+
+.allCard {
+  top: 300px;
+}
