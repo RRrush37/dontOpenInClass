@@ -48,6 +48,7 @@ window.addEventListener("load", () => {
   let root = ReactDOM.createRoot(document.body);
   root.render(
     <div>
+      <div className="frontground"></div>
       <div className="HanCard allCard">
         <Card
           id="HanCard"
@@ -73,7 +74,7 @@ window.addEventListener("load", () => {
         <Card
           id="JingCard"
           imgSrc="https://image.ibb.co/fYzTrb/lastofus.jpg"
-          text={content[0]}
+          text={"這張是一靖的" + content[3]}
         />
       </div>
     </div>
@@ -111,6 +112,18 @@ const content = [
   <p class="text-right">♥Sarah</p>"`,
   ` 
   <h4 class="color2 margin">這區是傑哥的</h4>
+  <p>思彤,</p>
+  <p>生日快樂！</p>
+  <p>You’re never around, you</p>
+  <p>hate the music I’m into, you</p>
+  <p>practically despise the movies I</p>
+  <p>like, and yet somehow you still</p>
+  <p>manage to be the best dad every year.</p>
+  <p>How do you do that? :)</p>
+  <p class="text-right">Happy Birthday, stone!</p>
+  <p class="text-right">♥Sarah</p>"`,
+  ` 
+  <h4 class="color2 margin">這區是一靖的</h4>
   <p>思彤,</p>
   <p>生日快樂！</p>
   <p>You’re never around, you</p>

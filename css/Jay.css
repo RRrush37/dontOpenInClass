@@ -1,6 +1,5 @@
-.JayCard {
-  position: relative;
-  left: -450px;
+.JayCard .text-right {
+  text-align: right;
 }
 
 .JayCard h4 {
@@ -16,28 +15,26 @@
   color: #c0392b; /*TALL POPPY*/
 }
 
-.JayCard .card {
+.JayCard {
   color: #013243; /*SHERPA BLUE*/
-  position: absolute;
-  top: 50%;
-  left: 50%;
   width: 300px;
   height: 400px;
   background: #e0e1dc;
   transform-style: preserve-3d;
-  transform: translate(-50%, -50%) perspective(2000px);
+  transform: perspective(2000px);
   box-shadow: inset 300px 0 50px rgba(0, 0, 0, 0.5),
     20px 0 60px rgba(0, 0, 0, 0.5);
   transition: 1s;
 }
 
-.JayCard .card:hover {
-  transform: translate(-50%, -50%) perspective(2000px) rotate(15deg) scale(1.2);
+.JayCard:hover {
+  transform: perspective(2000px) rotate(-5deg) scale(1.2);
   box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5),
     0 10px 100px rgba(0, 0, 0, 0.5);
+  left: 40%;
 }
 
-.JayCard .card:before {
+.JayCard:before {
   content: "";
   position: absolute;
   top: -5px;
@@ -49,7 +46,7 @@
   transform: skewX(-45deg);
 }
 
-.JayCard .card:after {
+.JayCard:after {
   content: "";
   position: absolute;
   top: 0;
@@ -61,59 +58,83 @@
   transform: skewY(-45deg);
 }
 
-.JayCard .card .imgBox {
+.JayCard .imgBox {
   width: 100%;
   height: 100%;
   position: relative;
   transform-origin: left;
   transition: 0.7s;
+
+  border: 1px solid red;
 }
 
-.JayCard .card .bark {
+.JayCard .bark {
   position: absolute;
   background: #e0e1dc;
   width: 100%;
   height: 100%;
   opacity: 0;
   transition: 0.7s;
+
+  border: 1px solid blue;
+}
+.JayCard .bark img {
+  height: 50%;
+  display: block;
+
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}
+.JayCard .bark p {
+  position: absolute;
+  bottom: 21%;
+  right: 52%;
+  transform: scaleX(-1);
 }
 
-.JayCard .card .imgBox img {
-  min-width: 250px;
-  max-height: 400px;
+.JayCard .imgBox div {
+  /* min-width: 250px; */
+  /* max-height: 400px; */
+  background-color: #e0e1dc;
+  width: 100%;
+  height: 100%;
+
+  font-weight: bold;
+  overflow: hidden;
 }
 
-.JayCard .card:hover .imgBox {
+.JayCard:hover .imgBox {
   transform: rotateY(-135deg);
 }
 
-.JayCard .card:hover .bark {
+.JayCard:hover .bark {
   opacity: 1;
   transition: 0.6s;
   box-shadow: 300px 200px 100px rgba(0, 0, 0, 0.4) inset;
 }
 
-.JayCard .card .details {
+.JayCard .details {
   position: absolute;
   top: 0;
   left: 0;
   box-sizing: border-box;
   padding: 0 0 0 10px;
   z-index: -1;
-  margin-top: 70px;
+  margin-top: 25px;
 }
 
-.JayCard .card .details p {
+.JayCard .details p {
   font-size: 15px;
-  line-height: 5px;
-  transform: rotate(-10deg);
-  padding: 0 0 0 20px;
+  line-height: 14px;
+  /* transform: rotate(-10deg); */
+  padding: 0 0 0 10px;
 }
 
-.JayCard .card .details h4 {
+.JayCard .details h4 {
   text-align: center;
 }
 
-.JayCard .text-right {
+.text-right {
   text-align: right;
 }
