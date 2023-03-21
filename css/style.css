@@ -24,14 +24,10 @@ ul li {
   list-style: none;
 }
 .card {
-  top: 300px;
+  top: 50px;
   transition: 1s;
   left: 0;
   position: relative;
   flex-grow: 1;
   margin: 20px auto;
-}
-
-.card:hover {
-  z-index: 1;
 }
